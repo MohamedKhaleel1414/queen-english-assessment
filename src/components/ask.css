@@ -1,0 +1,97 @@
+.wholebody{
+    padding-top: 2rem;padding-bottom: 2rem;margin-top: 1rem;
+    padding-left: 3rem;padding-right: 3rem;
+    display: flex;
+    flex-direction: column;align-items: center;
+    margin-bottom: 10rem;
+}
+
+.questionbar{
+    margin-bottom: 5rem;
+    width: 75%;height: 5rem;
+    align-items: center; display: flex; flex-direction: column; justify-content: center;
+    border: 1px solid aqua; border-radius: 1rem;
+    font-size: 1.25rem; font-weight: 500;
+    padding-top: 1rem; padding-bottom: 1rem;
+}
+
+.textq{
+    width: 75%;text-align: center;
+}
+
+.selections{
+    width: 75%;margin-bottom: 5rem;
+    display: grid; grid-template-columns: auto auto ;
+    align-items: center;text-align: center;column-gap: 20rem;row-gap: 3rem;
+}
+
+.selectCon{
+    padding-top: 1rem;padding-bottom: 1rem;
+    border: 1px aqua solid; border-radius: 1rem;
+}
+
+.select{
+    height: 2.5rem;
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid aqua; 
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+  }
+
+  .spinner-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+  }
